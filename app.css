@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  height: 100vh;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #120144, #000000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #120144, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navbar {
+  background-color: transparent;
+}
+
+.container-fluid .navbar-brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: #024caa;
+}
+
+.container-fluid .navbar-brand span {
+  color: white;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #120144; /* Ganti warna latar belakang saat di-hover */
+  color: #fff; /* Ganti warna teks juga */
+}
