@@ -1,13 +1,8 @@
-* {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  color: white;
-  overflow-x: hidden;
-}
-body {
-  height: 100vh;
-  width: 100vw;
+  color: #ffffff;
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #120144, #000000); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #120144, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -32,8 +27,9 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.navbar a:hover {
-  background-color: #120144; /* Ganti warna latar belakang saat di-hover */
+.navbar-collapse a:hover {
+  border-radius: 5px;
+  background-color: #024caa; /* Ganti warna latar belakang saat di-hover */
 }
 
 /* Start Home style */
@@ -43,10 +39,6 @@ body {
   letter-spacing: 10px;
   color: #444356;
   overflow: hidden;
-}
-
-.lead span {
-  color: #024caa;
 }
 
 .animate-keyword p {
@@ -76,8 +68,115 @@ body {
   }
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent; /* Kursor berkedip */
-  }
+/* start style about */
+#about {
+  padding: 50px 20px;
+}
+
+#about .content-title {
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(to right, #9ccdf3, #dbebf7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#about .content-label {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ffffff;
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* Experience Items */
+.about-xp {
+  display: grid;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-xp-item {
+  background-color: #120144;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.about-xp-item:hover {
+  transform: translateY(-5px);
+}
+
+.about-xp-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.about-xp-item h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.about-xp-item p {
+  color: #ffffff;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Detail Text */
+.about-xp-item-detail {
+  font-size: 0.9rem;
+  color: #555;
+  display: none;
+  margin-top: 10px;
+}
+
+/* Button Styling */
+.button {
+  background-color: #b7e0ff;
+  color: #000000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.button.active {
+  background-color: #024caa;
+}
+
+/* start style sertifikasi */
+#certificate {
+  padding: 50px 15px;
+  text-align: center;
+}
+
+#certificate .container {
+  max-width: 1200px; /* Menentukan lebar maksimal */
+  margin: 0 auto; /* Memusatkan galeri */
+}
+
+/* Efek Hover pada Gambar */
+.img-thumbnail {
+  transition: all 0.4s ease-in-out, box-shadow 0.3s ease;
+}
+
+.img-thumbnail:hover {
+  transform: rotate(10deg);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img-thumbnail.zoom {
+  transform: scale(1.5);
+  z-index: 10;
 }
