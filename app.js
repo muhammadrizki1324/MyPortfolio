@@ -18,3 +18,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+function openToWhatsapp(event) {
+  event.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('message').value;
+
+  const waUrl = `https://wa.me//6287880152514?text=hallo, nama saya ${name} dengan email  ${email} 
+  tujuan saya ${subject} ${message}`;
+
+  window.open(waUrl, '_Blank');
+}

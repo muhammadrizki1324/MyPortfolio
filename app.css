@@ -28,7 +28,7 @@ body {
 
 .navbar-nav .nav-item a:hover {
   border-radius: 20px;
-  background-color: #4a00e0; /* Ganti warna latar belakang saat di-hover */
+  background-color: #8e2de2; /* Ganti warna latar belakang saat di-hover */
 }
 
 /* Start Home style */
@@ -44,8 +44,9 @@ body {
 }
 
 .home-content a {
-  background-color: #4a00e0;
+  background-color: #8e2de2;
   color: #ffffff;
+  border: none;
 }
 
 .animate-keyword p {
@@ -149,8 +150,8 @@ body {
 
 /* Button Styling */
 .button {
-  background-color: #b7e0ff;
-  color: #000000;
+  background-color: #4a00e0;
+  color: #ffffff;
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
@@ -160,7 +161,7 @@ body {
 
 .button:hover,
 .button.active {
-  background-color: #024caa;
+  background-color: #8e2de2;
 }
 
 /* start style sertifikasi */
@@ -197,11 +198,16 @@ body {
   z-index: 10;
 }
 /* Custom styling for the contact form */
+/* Contact form container */
+/* .contact-form {
+  background-color: transparent;
+  padding: 2rem;
+} */
 .contact-form {
-  background-color: #f8f9fa;
+  background-color: transparent;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); */
   max-width: 600px;
   margin: 20px auto;
 }
@@ -212,10 +218,10 @@ body {
 }
 .form-control:focus {
   box-shadow: none;
-  border-color: #007bff;
+  border-color: #8e2de2;
 }
 .btn-custom {
-  background-color: #007bff;
+  background-color: #4a00e0;
   border: none;
   font-size: 1rem;
   font-weight: bold;
@@ -224,13 +230,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .btn-custom:hover {
-  background-color: #0056b3;
-}
-
-/* Contact form container */
-.contact-form {
-  background-color: transparent;
-  padding: 2rem;
+  background-color: #8e2de2;
 }
 
 /* Title styling */
@@ -256,6 +256,7 @@ body {
   background-color: #1565c0;
 }
 
+/* Styling wrapper  */
 .wrapper {
   background-color: transparent;
   height: 130px;
@@ -309,4 +310,18 @@ body {
   to {
     transform: translateX(calc(-150px * 5));
   }
+}
+
+
+@media (max-width: 500px) {
+    .home-content h1 {
+        font-size: 80px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        overflow: hidden;
+      }
 }
