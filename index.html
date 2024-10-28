@@ -18,7 +18,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">My<span>Portfolio</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon bg-white"></span>
@@ -26,16 +26,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link text-light fw-bold" aria-current="page" href="#home">Home</a>
+                <a class="nav-link text-light" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light fw-bold" href="#about">About</a>
+                <a class="nav-link text-light" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light fw-bold" href="#certificate">Certificate</a>
+                <a class="nav-link text-light" href="#certificate">Certificate</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light fw-bold" href="#">Contact</a>
+                <a class="nav-link text-light" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -50,7 +50,7 @@
             <!-- Gambar, tampil di atas pada layar kecil -->
             <div class="col-lg-6 col-md-12 order-1 order-lg-2 d-flex justify-content-center">
               <div class="home-img">
-                <img class="img-fluid" src="assets/avatar.png" alt="Avatar Image" />
+                <img class="img-fluid" src="assets/profil.png" alt="Avatar Image" />
               </div>
             </div>
             <!-- Konten Teks -->
@@ -61,7 +61,7 @@
                   <p class="lead fw-bold mb-0">I`m <span>Muhammad Rizki</span></p>
                   <p class="lead fw-bold">I`m Junior web dev</p>
                 </div>
-                <a href="https://muhammadrizki1324.github.io/Web-CV/" class="btn btn-primary mt-3" target="_blank">Visit web cv</a>
+                <a href="https://muhammadrizki1324.github.io/Web-CV/" class="btn btn-light mt-3" target="_blank">Visit web cv</a>
               </div>
             </div>
           </div>
@@ -81,33 +81,53 @@
               <div class="about-xp-item-header">
                 <div>
                   <h5>Software Engineer</h5>
-                  <p>Primago (2022-2022)</p>
+                  <p>PT Pencari Cinta Sejati (2022-2022)</p>
                 </div>
                 <button class="btn button" onclick="addToggle(event)">More Info</button>
               </div>
               <p class="about-xp-item-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, nemo!</p>
             </div>
-
             <div class="about-xp-item">
               <div class="about-xp-item-header">
                 <div>
-                  <h5>Software Engineer</h5>
+                  <h5>PT Pencari Cinta Sejati</h5>
                   <p>Primago (2022-2022)</p>
                 </div>
                 <button class="btn button" onclick="addToggle(event)">More Info</button>
               </div>
               <p class="about-xp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ipsum!</p>
             </div>
-
             <div class="about-xp-item">
               <div class="about-xp-item-header">
                 <div>
-                  <h5>Software Engineer</h5>
+                  <h5>PT Pencari Cinta Sejati</h5>
                   <p>Primago (2022-2022)</p>
                 </div>
                 <button class="btn button" onclick="addToggle(event)">More Info</button>
               </div>
               <p class="about-xp-item-detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, optio.</p>
+            </div>
+          </div>
+          <div class="wrapper mt-5">
+            <div class="track">
+              <div class="logo">
+                <img src="assets/Laravel.png" />
+              </div>
+              <div class="logo">
+                <img src="assets/vue.png" />
+              </div>
+              <div class="logo">
+                <img src="assets/Bootstrap.png" />
+              </div>
+              <div class="logo">
+                <img src="assets/figma.png" />
+              </div>
+              <div class="logo">
+                <img src="assets/postgresLogo.png" />
+              </div>
+              <div class="logo">
+                <img src="assets/mysql.png" />
+              </div>
             </div>
           </div>
         </div>
@@ -116,7 +136,7 @@
       <section id="certificate" data-aos="fade-up" data-aos-delay="400">
         <!-- Page Content -->
         <div class="container">
-          <h1 class="fw-light text-center text-lg-start mt-4 mb-0">Certificate Gallery</h1>
+          <h1 class="fw-bold text-center text-lg-start mt-4 mb-0">Certificate Gallery</h1>
 
           <hr class="mt-2 mb-5" />
 
@@ -145,6 +165,42 @@
               <a href="javascript:void(0);" class="d-block mb-4 h-100">
                 <img class="img-fluid img-thumbnail" src="assets/Databases-1.png" alt="" />
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" data-aos="fade-up" data-aos-delay="400">
+        <div class="form-title text-center fw-bold">Contact Us</div>
+        <div class="container mt-5">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-center mb-4 mb-lg-0">
+              <img class="img-fluid" src="assets/email.png" alt="Contact Us Image" style="max-width: 80%; border-radius: 8px" />
+            </div>
+            <div class="col-lg-6">
+              <div class="contact-form">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Enter subject" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Write your message here" required></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-custom">Send Message</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>

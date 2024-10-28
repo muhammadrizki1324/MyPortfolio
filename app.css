@@ -1,3 +1,7 @@
+/*   background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* #8E2DE2 */
+/* #4A00E0 */
+
 body {
   margin: 0;
   padding: 0;
@@ -13,23 +17,18 @@ body {
   background-color: transparent;
 }
 
-.container-fluid .navbar-brand {
+.container .navbar-brand {
   font-weight: bold;
   font-size: 25px;
-  color: #024caa;
+  color: #4a00e0;
+}
+.navbar-nav {
+  gap: 20px;
 }
 
-.navbar a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 5px;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-}
-
-.navbar-collapse a:hover {
-  border-radius: 5px;
-  background-color: #024caa; /* Ganti warna latar belakang saat di-hover */
+.navbar-nav .nav-item a:hover {
+  border-radius: 20px;
+  background-color: #4a00e0; /* Ganti warna latar belakang saat di-hover */
 }
 
 /* Start Home style */
@@ -37,8 +36,16 @@ body {
   font-size: 100px;
   text-transform: uppercase;
   letter-spacing: 10px;
-  color: #444356;
+  background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   overflow: hidden;
+}
+
+.home-content a {
+  background-color: #4a00e0;
+  color: #ffffff;
 }
 
 .animate-keyword p {
@@ -50,6 +57,7 @@ body {
 
 /* Animasi untuk setiap paragraf */
 .animate-keyword p:nth-child(1) {
+  color: #4a00e0;
   animation-delay: 0s; /* Muncul pertama */
   visibility: visible; /* Menampilkan paragraf pertama */
 }
@@ -76,7 +84,7 @@ body {
 #about .content-title {
   font-size: 60px;
   font-weight: bold;
-  background: linear-gradient(to right, #9ccdf3, #dbebf7);
+  background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -161,6 +169,13 @@ body {
   text-align: center;
 }
 
+#certificate .container h1 {
+  background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #certificate .container {
   max-width: 1200px; /* Menentukan lebar maksimal */
   margin: 0 auto; /* Memusatkan galeri */
@@ -172,6 +187,7 @@ body {
 }
 
 .img-thumbnail:hover {
+  cursor: pointer;
   transform: rotate(10deg);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
@@ -179,4 +195,118 @@ body {
 .img-thumbnail.zoom {
   transform: scale(1.5);
   z-index: 10;
+}
+/* Custom styling for the contact form */
+.contact-form {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+.form-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+.btn-custom {
+  background-color: #007bff;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+/* Contact form container */
+.contact-form {
+  background-color: transparent;
+  padding: 2rem;
+}
+
+/* Title styling */
+.form-title {
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+/* Custom button */
+.btn-custom {
+  background-color: #4a00e0;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #1565c0;
+}
+
+.wrapper {
+  background-color: transparent;
+  height: 130px;
+  overflow: hidden;
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.wrapper:before,
+.wrapper:after {
+  content: '';
+  position: absolute;
+  height: 130px;
+  width: 150px;
+  z-index: 2;
+}
+
+.wrapper:after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.wrapper:before {
+  left: 0;
+  top: 0;
+}
+
+.wrapper .track {
+  display: flex;
+  align-items: center;
+  /* width: calc(150px * 10); */
+  animation: scroll 15s 0.5s linear infinite;
+}
+
+.wrapper .logo {
+  width: 150px;
+}
+
+.wrapper .logo img {
+  height: 90px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-150px * 5));
+  }
 }
